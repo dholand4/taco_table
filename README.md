@@ -15,7 +15,7 @@ Projeto **Tabela Taco**, Projeto desenvolvido para consultar os macronutrientes 
 ---
 
 ## 📱 Preview do projeto
-
+- Link do Projeto: https://dholand4.github.io/taco_table/
 <div align="center">
   <img style="margin: 5px" alt="image-taco" src="https://i.imgur.com/NequuMq.png" width="1183">
 
