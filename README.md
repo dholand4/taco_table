@@ -1,54 +1,66 @@
-# React + TypeScript + Vite
+## Indice
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+- [Sobre](#-sobre)
+- [Preview do projeto](#-preview-do-projeto)
+- [Tecnologias utilizadas](#-tecnologias-utilizadas)
+- [Funcionalidades](#-Funcionalidades)
+- [Como baixar o projeto](#-como-baixar-o-projeto)
 
-Currently, two official plugins are available:
+---
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+## 🤔 Sobre
 
-## Expanding the ESLint configuration
+Projeto **Tabela Taco**, Projeto desenvolvido para consultar os macronutrientes dos alimentos com base na Tabela Brasileira de Composição de Alimentos. 
 
-If you are developing a production application, we recommend updating the configuration to enable type-aware lint rules:
+---
 
-```js
-export default tseslint.config({
-  extends: [
-    // Remove ...tseslint.configs.recommended and replace with this
-    ...tseslint.configs.recommendedTypeChecked,
-    // Alternatively, use this for stricter rules
-    ...tseslint.configs.strictTypeChecked,
-    // Optionally, add this for stylistic rules
-    ...tseslint.configs.stylisticTypeChecked,
-  ],
-  languageOptions: {
-    // other options...
-    parserOptions: {
-      project: ['./tsconfig.node.json', './tsconfig.app.json'],
-      tsconfigRootDir: import.meta.dirname,
-    },
-  },
-})
-```
+## 📱 Preview do projeto
 
-You can also install [eslint-plugin-react-x](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-x) and [eslint-plugin-react-dom](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-dom) for React-specific lint rules:
+<div align="center">
+  <img style="margin: 5px" alt="image-taco" src="https://i.imgur.com/NequuMq.png" width="1183">
 
-```js
-// eslint.config.js
-import reactX from 'eslint-plugin-react-x'
-import reactDom from 'eslint-plugin-react-dom'
+</div>
 
-export default tseslint.config({
-  plugins: {
-    // Add the react-x and react-dom plugins
-    'react-x': reactX,
-    'react-dom': reactDom,
-  },
-  rules: {
-    // other rules...
-    // Enable its recommended typescript rules
-    ...reactX.configs['recommended-typescript'].rules,
-    ...reactDom.configs.recommended.rules,
-  },
-})
+---
+
+## 💻 Tecnologias utilizadas
+
+O projeto foi feito utilizando das seguintes tecnologias
+
+- Vite
+- React
+- Styled-Components
+- Typescript
+
+---
+
+## 💻 Funcionalidades
+
+- Listagem de Alimentos<br>
+Exibe uma lista de alimentos com suas composições nutricionais, como proteínas, gorduras, carboidratos e calorias.
+
+- Buscar Alimentos<br>
+Permite ao usuário buscar alimentos específicos por nome.
+
+- Visualizar Macronutrientes de Acordo com a Quantidade<br>
+Exibe a quantidade de macronutrientes (proteínas, gorduras, carboidratos) de um alimento com base na quantidade especificada pelo usuário (por exemplo, 100g, etc.).
+
+---
+
+## 📦 Como baixar o projeto
+
+```bash
+  #clonar o repositorio
+  $ git clone https://github.com/dholand4/taco_table.git
+
+  #entrar na pasta do projeto
+  $ cd taco_table
+
+  #instalar as dependencias
+  $ yarn
+
+  #Basta ler o QR CODE, com isso o projeto deverá abrir
+  $ yarn dev
+
+
 ```
